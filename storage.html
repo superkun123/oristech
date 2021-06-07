@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="https://api-maps.yandex.ru/2.1/?apikey=f7d80e1e-5437-45b3-8559-32d6ecd8532f&lang=ru_RU" type="text/javascript"></script>
+
+		<title>Орис техник</title>
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<nav class="main-nav">
+							<div class="main-nav__logo">
+								<img src="./assets/img/logo.svg" alt="Логотип" />
+							</div>
+							<div class="main-nav__main-menu">
+								<ul class="main-menu__ul">
+									<li class="main-menu__li"><a href="#">О нас</a></li>
+									<li class="main-menu__li"><a href="#" class="catalog">Каталог</a></li>
+									<li class="main-menu__li"><a href="#">Склад</a></li>
+									<li class="main-menu__li"><a href="#">Партнёры</a></li>
+									<li class="main-menu__li"><a href="#">Контакты</a></li>
+								</ul>
+							</div>
+							<div class="phone-and-search">
+								<a href="tel:+7(3452)561525" class="phone">+7 (3452) 56 15 25</a>
+								<a href="tel:+7(3452)561525" class="round-btn phone-btn">
+									<svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M7.87939 11.9748C7.08937 11.8559 6.33839 11.5419 5.68953 11.0594C4.93759 10.5158 4.24686 9.88638 3.63032 9.18285C2.87301 8.34299 2.10182 7.51392 1.43353 6.58767C0.907454 5.84379 0.436878 5.06391 0.180199 4.16766C0.00170633 3.59782 -0.0450314 2.99239 0.0437669 2.40034C0.159388 1.69365 0.520125 1.11894 1.01383 0.637822C1.21745 0.448857 1.43859 0.281267 1.67402 0.137502C1.81418 0.0451051 1.97735 -0.00265781 2.14338 0.000114159C2.30941 0.00288613 2.47101 0.0560715 2.60824 0.153099C3.2656 0.559039 3.76944 1.18603 4.03615 1.93001C4.08188 2.03483 4.09967 2.15045 4.08767 2.26483C4.07568 2.37921 4.03433 2.48816 3.96794 2.58031C3.8026 2.81187 3.63032 3.03744 3.46383 3.269C3.31699 3.47417 3.16437 3.67573 3.03372 3.8917C2.96647 3.99009 2.93082 4.10799 2.93186 4.22862C2.9329 4.34924 2.97057 4.46646 3.0395 4.56359C3.36902 5.04352 3.68813 5.53784 4.04656 5.99496C4.69508 6.82803 5.41318 7.6001 6.19248 8.30219C6.36591 8.45697 6.55206 8.59375 6.73705 8.73412C6.81585 8.79769 6.91058 8.83645 7.00998 8.84581C7.10938 8.85517 7.20928 8.83473 7.29782 8.78692C7.49606 8.68552 7.68903 8.57339 7.87592 8.45097C8.13491 8.2794 8.38928 8.10303 8.64364 7.93385C8.7485 7.86422 8.86986 7.82602 8.99433 7.82348C9.1188 7.82094 9.24152 7.85415 9.34893 7.91945C10.0049 8.2572 10.5397 8.80372 10.8751 9.47921C10.9694 9.64789 11.012 9.84239 10.9971 10.0368C10.9822 10.2312 10.9106 10.4163 10.7919 10.5674C10.1525 11.4385 9.33505 11.976 8.24822 12C8.12494 11.9981 8.00184 11.9897 7.87939 11.9748Z"
+											fill="#396DA3"
+										/>
+									</svg>
+								</a>
+								<a href="#" class="hamburger">
+									<div class="line firstline"></div>
+									<div class="line secondline"></div>
+								</a>
+								<a href="#" class="round-btn-empty search">
+									<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M6.5625 11.25C9.15133 11.25 11.25 9.15133 11.25 6.5625C11.25 3.97367 9.15133 1.875 6.5625 1.875C3.97367 1.875 1.875 3.97367 1.875 6.5625C1.875 9.15133 3.97367 11.25 6.5625 11.25Z"
+											stroke="white"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+										<path d="M13.125 13.1252L9.875 9.87524" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+									</svg>
+								</a>
+							</div>
+						</nav>
+					</div>
+				</div>
+
+				<div class="mobile-menu header-mobile">
+					<ul class="mobile-menu-list">
+						<li><a href="#">О нас</a></li>
+						<div id="footer-accordion">
+							<div class="card">
+								<div class="card-header" id="headingOneheader">
+									<button id="catalog-btn" class="btn btn-link collapsed header-catalog" data-toggle="collapse" data-target="#collapseOneheader" aria-expanded="true" aria-controls="collapseOneheader">
+										Каталог
+										<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect x="1.43359" y="5.99976" width="1.60227" height="6.40909" rx="0.801136" transform="rotate(-135 1.43359 5.99976)" fill="white"></rect>
+											<rect x="9.36328" y="4.86694" width="1.60227" height="6.40909" rx="0.801136" transform="rotate(135 9.36328 4.86694)" fill="white"></rect>
+										</svg>
+									</button>
+								</div>
+
+								<div id="collapseOneheader" class="collapse" aria-labelledby="headingOneheader" data-parent="#footer-accordion">
+									<div class="card-body">
+										<ul class="footer-list">
+											<li><a href="#">Кардиохирургия</a></li>
+											<li><a href="#">Офтальмология</a></li>
+											<li><a href="#">Оториноларингология</a></li>
+											<li><a href="#">Рентгенхирургия</a></li>
+											<li><a href="#">Кардиохирургия</a></li>
+											<li><a href="#">Медицинская мебель</a></li>
+											<li><a href="#">Стерилизация</a></li>
+											<li><a href="#">Физиотерапия и реабилитация</a></li>
+											<li>
+												<a href="#">
+													Анестезиолого-реанимационное<br />
+													оборудование
+												</a>
+											</li>
+											<li><a href="#">Лабораторный пластик</a></li>
+											<li><a href="#">Шовный материал</a></li>
+											<li><a href="#">Функциональная диагностика</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<li><a href="#">Склад</a></li>
+						<li><a href="#">Партнёры</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<ul class="mobile-menu-contacts">
+						<li>
+							<div class="mobile-menu-item">
+								<svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="path-1-inside-1" fill="white">
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M17.8379 17.1486C19.4944 15.3276 20.5042 12.9078 20.5042 10.2521C20.5042 4.59002 15.9142 0 10.2521 0C4.59002 0 0 4.59002 0 10.2521C0 12.9072 1.00932 15.3266 2.66519 17.1474L2.65647 17.1562L8.83678 23.3365C9.61783 24.1175 10.8842 24.1175 11.6652 23.3365L17.4098 17.5919C17.4712 17.532 17.532 17.4712 17.5919 17.4098L17.8455 17.1562L17.8379 17.1486Z"
+										/>
+									</mask>
+									<path
+										d="M17.8379 17.1486L16.3585 15.8028L15.0748 17.2139L16.4237 18.5628L17.8379 17.1486ZM2.66519 17.1474L4.07937 18.5617L5.42813 17.213L4.14486 15.8019L2.66519 17.1474ZM2.65647 17.1562L1.24229 15.7419L-0.171999 17.1561L1.24225 18.5704L2.65647 17.1562ZM11.6652 23.3365L10.251 21.9223L10.251 21.9223L11.6652 23.3365ZM17.4098 17.5919L16.0133 16.1602L16.0044 16.1689L15.9955 16.1777L17.4098 17.5919ZM17.5919 17.4098L16.1777 15.9955L16.1689 16.0044L16.1602 16.0133L17.5919 17.4098ZM17.8455 17.1562L19.2597 18.5704L20.6739 17.1562L19.2597 15.742L17.8455 17.1562ZM18.5042 10.2521C18.5042 12.3909 17.6932 14.3356 16.3585 15.8028L19.3174 18.4944C21.2957 16.3196 22.5042 13.4246 22.5042 10.2521H18.5042ZM10.2521 2C14.8096 2 18.5042 5.69459 18.5042 10.2521H22.5042C22.5042 3.48545 17.0187 -2 10.2521 -2V2ZM2 10.2521C2 5.69459 5.69459 2 10.2521 2V-2C3.48545 -2 -2 3.48545 -2 10.2521H2ZM4.14486 15.8019C2.81068 14.3347 2 12.3904 2 10.2521H-2C-2 13.424 -0.792053 16.3184 1.18553 18.493L4.14486 15.8019ZM4.07064 18.5704L4.07937 18.5617L1.25102 15.7332L1.24229 15.7419L4.07064 18.5704ZM10.251 21.9223L4.07068 15.742L1.24225 18.5704L7.42257 24.7507L10.251 21.9223ZM10.251 21.9223L10.251 21.9223L7.42257 24.7507C8.98466 26.3128 11.5173 26.3128 13.0794 24.7507L10.251 21.9223ZM15.9955 16.1777L10.251 21.9223L13.0794 24.7507L18.824 19.0061L15.9955 16.1777ZM16.1602 16.0133C16.1118 16.0629 16.0629 16.1118 16.0133 16.1602L18.8062 19.0237C18.8796 18.9521 18.9521 18.8796 19.0237 18.8062L16.1602 16.0133ZM16.4313 15.742L16.1777 15.9955L19.0061 18.824L19.2597 18.5704L16.4313 15.742ZM16.4237 18.5628L16.4313 18.5704L19.2597 15.742L19.2522 15.7344L16.4237 18.5628Z"
+										fill="white"
+										mask="url(#path-1-inside-1)"
+									/>
+									<path
+										d="M13.6048 13.6282C12.7083 14.5162 11.6172 14.9602 10.3317 14.9602C9.04615 14.9602 7.95513 14.5162 7.05863 13.6282C6.17058 12.7317 5.72656 11.6364 5.72656 10.3424C5.72656 9.04842 6.17058 7.9574 7.05863 7.06936C7.95513 6.17286 9.04615 5.72461 10.3317 5.72461C11.6172 5.72461 12.7083 6.17286 13.6048 7.06936C14.5013 7.9574 14.9495 9.04842 14.9495 10.3424C14.9495 11.6364 14.5013 12.7317 13.6048 13.6282ZM8.2892 12.4357C8.83894 12.977 9.51977 13.2476 10.3317 13.2476C11.1436 13.2476 11.8245 12.977 12.3742 12.4357C12.9239 11.8859 13.1988 11.1882 13.1988 10.3424C13.1988 9.49667 12.9239 8.79893 12.3742 8.24919C11.8245 7.69945 11.1436 7.42458 10.3317 7.42458C9.51977 7.42458 8.83894 7.69945 8.2892 8.24919C7.73946 8.79893 7.46459 9.49667 7.46459 10.3424C7.46459 11.1882 7.73946 11.8859 8.2892 12.4357Z"
+										fill="white"
+									/>
+								</svg>
+								г. Тюмень, ул Грибоедова, д.13
+							</div>
+						</li>
+						<li>
+							<div class="mobile-menu-item">
+								<a class="mobile-tel" href="tel:+7(3452)561525">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="10" cy="10" r="9" stroke="white" stroke-width="2" />
+										<path
+											d="M6.45561 7.7192L6.45556 7.71922C6.77599 8.63361 7.69277 9.81539 8.8535 10.8731C10.0052 11.9227 11.3109 12.7715 12.3433 13.0876L12.3541 13.0902C12.3695 13.0939 12.3925 13.0993 12.4216 13.1057C12.4801 13.1186 12.5617 13.1356 12.6535 13.1516C12.8385 13.1837 13.0224 13.204 13.1445 13.1981C13.2556 13.1754 13.3525 13.1391 13.4234 13.1069C13.4609 13.0899 13.4893 13.0748 13.5066 13.0652C13.5071 13.0649 13.5076 13.0646 13.5081 13.0643L14.4136 12.3418C14.213 12.1759 13.8098 11.8397 13.4516 11.5406L12.9606 11.1304L12.8072 11.0023L12.7651 10.967L12.754 10.9578L12.7512 10.9554L12.7505 10.9548L12.7503 10.9547L12.7503 10.9546L13.071 10.5711L12.7503 10.9546L12.7341 10.9411L12.7271 10.9342C12.7253 10.9328 12.7226 10.9307 12.7191 10.9283C12.7055 10.9187 12.6903 10.9107 12.6776 10.9067C12.6732 10.9052 12.6705 10.9047 12.6691 10.9046C12.6634 10.9064 12.6455 10.9143 12.6158 10.9413L12.6006 10.9551L12.5843 10.9676C12.3645 11.1365 12.1611 11.2981 12.0125 11.4176C11.9383 11.4773 11.8779 11.5263 11.8363 11.5603L11.7884 11.5994L11.7762 11.6095L11.7732 11.612L11.7725 11.6126L11.7723 11.6127L11.7723 11.6127L6.45561 7.7192ZM6.45561 7.7192L6.4533 7.71292L6.45326 7.71281L6.45326 7.71279L6.45322 7.71269L6.45315 7.7125L6.45311 7.71239L6.45237 7.71031L6.44766 7.69687C6.44334 7.68432 6.43685 7.66506 6.42909 7.6406C6.41342 7.59121 6.39333 7.52313 6.37534 7.44796C6.35707 7.37167 6.34277 7.29555 6.33606 7.22855C6.33275 7.1955 6.33169 7.16849 6.33212 7.14756C6.33254 7.12769 6.33421 7.11837 6.33436 7.1175C6.33438 7.11743 6.33438 7.11741 6.33437 7.11746L6.34067 7.08886L6.34359 7.05972C6.35335 6.96216 6.38208 6.89124 6.40457 6.84854C6.41415 6.83035 6.42246 6.81758 6.42733 6.81058L7.32656 5.88525C7.34291 5.89502 7.36334 5.90938 7.3878 5.93038C7.5752 6.13271 7.94807 6.50943 8.27049 6.83221C8.43884 7.00074 8.59633 7.15745 8.71169 7.27199L8.84938 7.40852L8.8873 7.44604L8.89724 7.45587L8.8998 7.4584L8.90046 7.45905L8.90063 7.45922L8.90068 7.45926L9.25212 7.10362M6.45561 7.7192L9.25212 7.10362M9.25212 7.10362L8.90069 7.45928L8.9082 7.4667L8.90968 7.46804C8.91182 7.47034 8.91563 7.47458 8.92024 7.48035C8.92535 7.48673 8.92989 7.49304 8.93377 7.49899C8.74445 7.68651 8.56385 7.86611 8.43055 7.99887L8.27059 8.15828L8.22633 8.20245L8.22196 8.20681C8.21462 8.21359 8.2073 8.22074 8.20004 8.22828C8.16415 8.26552 8.13154 8.31017 8.10531 8.36213C8.05168 8.46837 8.03658 8.58074 8.04371 8.68426C8.05648 8.86983 8.14248 9.06184 8.27408 9.26862L9.25212 7.10362ZM12.6698 10.9043C12.6698 10.9044 12.6697 10.9044 12.6696 10.9044C12.6706 10.9041 12.671 10.904 12.671 10.904C12.671 10.9041 12.6706 10.9042 12.6698 10.9043ZM12.6686 10.9045C12.6682 10.9045 12.6679 10.9045 12.6679 10.9045C12.668 10.9045 12.6682 10.9045 12.6686 10.9045ZM7.28323 5.86573C7.27969 5.86566 7.27793 5.86525 7.27794 5.86507C7.27794 5.86488 7.27971 5.86491 7.28323 5.86573ZM13.5251 13.0544C13.5251 13.0544 13.5246 13.0547 13.5236 13.0553L13.5239 13.0552L13.525 13.0545L13.5251 13.0544Z"
+											fill="white"
+											stroke="white"
+										/>
+									</svg>
+									+7 (3452) 56 15 25
+								</a>
+							</div>
+						</li>
+						<div class="mobile-menu-item">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="10" cy="10" r="9" stroke="white" stroke-width="2" />
+								<rect x="9.16797" y="3.33325" width="1.66667" height="7.5" rx="0.833333" fill="white" />
+								<rect x="14.168" y="9.16675" width="1.66667" height="5" rx="0.833333" transform="rotate(90 14.168 9.16675)" fill="white" />
+							</svg>
+							<div class="worktime">
+								Пн-чт 8:30–17:40<br />
+								Пт 8:30–16:40
+							</div>
+						</div>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<div class="search-mask-body"></div>
+
+		<div class="aside-menu-catalog">
+			<div class="aside-catalog-cross">
+				<svg width="20" height="20" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect y="15.2851" width="21.6164" height="0.939843" rx="0.469922" transform="rotate(-45 0 15.2851)" fill="#242424" />
+					<rect x="0.757812" y="0.0507278" width="21.6164" height="0.939843" rx="0.469922" transform="rotate(45 0.757812 0.0507278)" fill="#242424" />
+				</svg>
+			</div>
+			<ul class="aside-list">
+				<li><a href="#">Кардиохирургия</a></li>
+				<li><a href="#">Офтальмология</a></li>
+				<li><a href="#">Оториноларингология</a></li>
+				<li><a href="#">Рентгенхирургия</a></li>
+				<li><a href="#">Кардиохирургия</a></li>
+				<li><a href="#">Медицинская мебель</a></li>
+				<li><a href="#">Стерилизация</a></li>
+				<li><a href="#">Физиотерапия и реабилитация</a></li>
+				<li>
+					<a href="#">
+						Анестезиолого-реанимационное<br />
+						оборудование
+					</a>
+				</li>
+				<li><a href="#">Лабораторный пластик</a></li>
+				<li><a href="#">Шовный материал</a></li>
+				<li><a href="#">Функциональная диагностика</a></li>
+			</ul>
+		</div>
+
+		<div class="search-sect">
+			<div class="search-mask"></div>
+			<section class="city-search">
+				<div class="container">
+					<div class="row"></div>
+					<div class="row search-city">
+						<div class="col finder">
+							<form action="">
+								<input type="text" placeholder="Поиск" class="search-city__input" />
+								<input type="submit" class="search-submit" value="" />
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<main class="main">
+			<section class="breadcrumbs-sect">
+				<div class="container">
+					<div class="row breadcrumb-row">
+						<div class="col">
+							<ul class="breadcrumbs-ul">
+								<li class="breadcrumbCustom"><a href="#">Главная</a></li>
+								<li class="breadcrumbCustom"><a href="#">Узи-аппараты</a></li>
+								<li class="breadcrumbCustom breadcrumbCustom-active"><a href="#">Склад</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="storage">
+				<div class="row">
+					<div class="col">
+						<h2 class="storage__title">Склад</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-lg-6">
+						<h3 class="storage-card__title">
+							УЗИ
+						</h3>
+						<div class="storage-card storage-card-first">
+							<div class="storage-card__item">
+								<p>ACUSON P500 (Датчики CH5-2, P4-2, L10-5v)</p>
+								<p class="storage-card__item-value">5 шт.</p>
+							</div>
+							<div class="storage-card__item">
+								<p>LOGIQ F8</p>
+								<p class="storage-card__item-value">5 шт.</p>
+							</div>
+							<div class="storage-card__item">
+								<p>VIVID T8 R3</p>
+								<p class="storage-card__item-value">5 шт.</p>
+							</div>
+							<div class="storage-card__item">
+								<p>ACUSON P500</p>
+								<p class="storage-card__item-value">5 шт.</p>
+							</div>
+							<div class="storage-card__item">
+								<p>LOGIQ F8</p>
+								<p class="storage-card__item-value">5 шт.</p>
+							</div>
+							<div class="storage-card__item">
+								<p>VIVID T8 R3</p>
+								<p class="storage-card__item-value">5 шт.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 col-lg-6">
+						<h3 class="storage-card__title">
+							Мониторы/ИВЛ/НДА/ЭКГ
+						</h3>
+						<div class="storage-card">
+							<div class="storage-card__item">
+								<p>ACUSON P500 (Датчики CH5-2, P4-2, L10-5v)</p>
+								<p class="storage-card__item-value">5 шт.</p>
+							</div>
+							<div class="storage-card__item">
+								<p>LOGIQ F8</p>
+								<p class="storage-card__item-value">5 шт.</p>
+							</div>
+							<div class="storage-card__item">
+								<p>VIVID T8 R3</p>
+								<p class="storage-card__item-value">5 шт.</p>
+							</div>
+							<div class="storage-card__item">
+								<p>ACUSON P500</p>
+								<p class="storage-card__item-value">5 шт.</p>
+							</div>
+							<div class="storage-card__item">
+								<p>LOGIQ F8</p>
+								<p class="storage-card__item-value">5 шт.</p>
+							</div>
+							<div class="storage-card__item">
+								<p>VIVID T8 R3</p>
+								<p class="storage-card__item-value">5 шт.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row main-footer-row">
+					<div class="col footer__social-medas-n-logo">
+						<div class="footer__logo">
+							<a href="#">
+								<img src="./assets/img/logo.svg" alt="Логотип" />
+							</a>
+						</div>
+						<div class="footer__copyright">
+							<p>© 2011 — 2020 «ОРИСтехник» Все права защищены.</p>
+							<p class="author">Разработка сайта - <a href="#">Конверсия</a></p>
+						</div>
+					</div>
+					<div class="col footer-list">
+						<a href="#" class="footer-list__title">
+							Каталог
+						</a>
+						<ul class="footer-list">
+							<li><a href="#">Кардиохирургия</a></li>
+							<li><a href="#">Офтальмология</a></li>
+							<li><a href="#">Рентгенхирургия</a></li>
+							<li><a href="#">Кардиохирургия</a></li>
+							<li><a href="#">Медицинская мебель</a></li>
+							<li><a href="#">Стерилизация</a></li>
+							<li><a href="#">Физиотерапия и реабилитация</a></li>
+						</ul>
+					</div>
+					<div class="col footer-list">
+						<a href="#" class="footer-list__title">
+							Компания
+						</a>
+						<ul class="footer-list">
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">Склад</a></li>
+							<li><a href="#">Партнеры</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="col footer-list">
+						<a href="#" class="footer-list__title">
+							Котакты
+						</a>
+						<ul class="footer-list">
+							<li><a class="b-bottom" href="tel:+7(3452)561525">+7 (3452) 56 15 25</a></li>
+							<li><a href="#" data-toggle="modal" data-target="#exampleModalCenter">Заказать звонок</a></li>
+						</ul>
+						<div class="worktime">
+							Пн-чт 8:30–17:40<br />
+							Пт 8:30–16:40
+						</div>
+					</div>
+					<div class="up-container">
+						<a href="#" class="up">
+							<svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M4.35355 0.646446C4.15829 0.451184 3.84171 0.451184 3.64645 0.646446L0.464466 3.82843C0.269203 4.02369 0.269203 4.34027 0.464466 4.53553C0.659728 4.7308 0.97631 4.7308 1.17157 4.53553L4 1.70711L6.82843 4.53553C7.02369 4.7308 7.34027 4.7308 7.53553 4.53553C7.7308 4.34027 7.7308 4.02369 7.53553 3.82843L4.35355 0.646446ZM4.5 14L4.5 1L3.5 1L3.5 14L4.5 14Z"
+									fill="white"
+								/>
+							</svg>
+							<span class="border-bottom">Наверх</span>
+						</a>
+						<ul class="footer-list">
+							<li><a class="b-bottom" href="./assets/documents/СОУТ.Перечень_р.м.pdf">СОУТ. Перечень р.м.</a></li>
+							<li><a class="b-bottom" href="./assets/documents/СОУТ.Сводная_ведомость.pdf">СОУТ. Сводная ведомость</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row mobile-footer-row">
+					<div class="footer__logo">
+						<a href="#" class="footer-logo-img">
+							<img src="./assets/img/logo.svg" alt="Логотип" />
+						</a>
+						<a class="b-bottom" href="tel:+7(3452)561525">+7 (3452) 56 15 25</a>
+					</div>
+					<div id="footer-accordion">
+						<div class="card">
+							<div class="card-header" id="headingOnefooter">
+								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOnefooter" aria-expanded="true" aria-controls="collapseOnefooter">
+									Каталог
+									<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect x="1.43359" y="5.99976" width="1.60227" height="6.40909" rx="0.801136" transform="rotate(-135 1.43359 5.99976)" fill="white"></rect>
+										<rect x="9.36328" y="4.86694" width="1.60227" height="6.40909" rx="0.801136" transform="rotate(135 9.36328 4.86694)" fill="white"></rect>
+									</svg>
+								</button>
+							</div>
+
+							<div id="collapseOnefooter" class="collapse" aria-labelledby="headingOnefooter" data-parent="#footer-accordion">
+								<div class="card-body">
+									<ul class="footer-list">
+										<li><a href="#">Освещение</a></li>
+										<li><a href="#">Офтальмология</a></li>
+										<li><a href="#">Рентгенхирургия</a></li>
+										<li><a href="#">Инструмент</a></li>
+										<li><a href="#">Крепеж</a></li>
+										<li><a href="#">Натяжные потолки</a></li>
+										<li><a href="#">Мебель</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<ul class="footer-list mobile-footer-list">
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Склад</a></li>
+							<li><a href="#">Партнёры</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="row copyright-row">
+						<div class="col-12 footer-mobile-left-col">
+							<div class="footer__copyright">
+								<p>© 2011 — 2020 «ОРИСтехник» Все права защищены.</p>
+								<p class="author">Разработка сайта - <a href="#">Конверсия</a></p>
+								<a class="extra-link" href="#">СОУТ. Перечень р.м.</a>
+								<a class="extra-link" href="#">СОУТ. Сводная ведомость</a>
+							</div>
+						</div>
+					</div>
+					<div class="row up-row">
+						<div class="col up-col-mobile">
+							<div class="up-container">
+								<a href="#" class="up">
+									<svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M4.35355 0.646446C4.15829 0.451184 3.84171 0.451184 3.64645 0.646446L0.464466 3.82843C0.269203 4.02369 0.269203 4.34027 0.464466 4.53553C0.659728 4.7308 0.97631 4.7308 1.17157 4.53553L4 1.70711L6.82843 4.53553C7.02369 4.7308 7.34027 4.7308 7.53553 4.53553C7.7308 4.34027 7.7308 4.02369 7.53553 3.82843L4.35355 0.646446ZM4.5 14L4.5 1L3.5 1L3.5 14L4.5 14Z"
+											fill="white"
+										/>
+									</svg>
+									<span class="b-bottom">Наверх</span>
+								</a>
+							</div>
+							<!-- <a href="#">СОУТ. Перечень р.м.</a>
+			  <a href="#">СОУТ. Сводная ведомость</a> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<h3 class="modal-form__title">Оставить заявку</h3>
+						<form action="">
+							<div class="form-card__input-container">
+								<label class="form-card__label" for="form-card__name">
+									Имя<span class="star">*</span>
+									<input class="main-input form-card__input" type="text" placeholder="Введтие имя" id="form-card__name" required />
+								</label>
+							</div>
+							<div class="form-card__input-container">
+								<label class="form-card__label" for="form-card__name">E-mail<span class="star">*</span></label>
+								<input class="main-input form-card__input" type="tel" placeholder="Введите E-mail" id="form-card__name" required />
+							</div>
+							<div class="form-card__input-container">
+								<label class="form-card__label" for="form-card__name">Телефон<span class="star">*</span></label>
+								<input class="main-input form-card__input" type="tel" placeholder="Введтие телефон" id="form-card__name" required />
+							</div>
+							<input class="main-btn submit-btn" type="submit" value="Отправить" />
+							<label class="container-for-filter">
+								<span class="grey">Я согласен с <a href="#">условиями передачи информации</a></span>
+								<input type="checkbox" class="checkbox-filter" id="" />
+								<span class="checkmark"></span>
+							</label>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script type="text/javascript" src="./js/jquery.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="./js/jquery.marquee.min.js"></script>
+		<script src="./js/main.js"></script>
+
+		<script type="text/javascript">
+			// Функция ymaps.ready() будет вызвана, когда
+			// загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+			ymaps.ready(function () {
+				var myMap = new ymaps.Map(
+						"map",
+						{
+							center: [57.148537, 65.534238],
+							zoom: 16,
+						},
+						{
+							searchControlProvider: "yandex#search",
+						}
+					),
+					// Создаём макет содержимого.
+					MyIconContentLayout = ymaps.templateLayoutFactory.createClass('<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'),
+					myPlacemark = new ymaps.Placemark(
+						myMap.getCenter(),
+						{
+							hintContent: "Собственный значок метки",
+							balloonContent: "Это красивая метка",
+						},
+						{
+							// Опции.
+							// Необходимо указать данный тип макета.
+							iconLayout: "default#image",
+							// Своё изображение иконки метки.
+							iconImageHref: "./assets/img/icon-map.png",
+							// Размеры метки.
+							iconImageSize: [66, 75],
+							// Смещение левого верхнего угла иконки относительно
+							// её "ножки" (точки привязки).
+							iconImageOffset: [-10, -80],
+						}
+					);
+
+				myMap.geoObjects.add(myPlacemark);
+			});
+		</script>
+	</body>
+</html>
